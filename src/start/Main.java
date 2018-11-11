@@ -22,6 +22,13 @@ public class Main {
          * Version 1.0
          * @param args
          */
+        public static void showNameMember(String[] str) {
+                String name;
+                for (int i = 0; i < str.length; i++) {
+                        name = str[i].trim().substring(str[i].lastIndexOf(" "));
+                        System.out.println("Member'Name of Student["+(i)+"]" + name);
+                }
+        }
         public static void main(String[] args) {
                 // enter size of class
                 numberHV = inputSizeArr();
