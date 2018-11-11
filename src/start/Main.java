@@ -26,9 +26,10 @@ public class Main {
                 String name;
                 for (int i = 0; i < str.length; i++) {
                         name = str[i].trim().substring(str[i].lastIndexOf(" "));
-                        System.out.println("Member'Name of Student["+(i)+"]" + name);
+                        System.out.println("Member'Name of Student[" + (i) + "]" + name);
                 }
         }
+
         public static void main(String[] args) {
                 // enter size of class
                 numberHV = inputSizeArr();
@@ -40,6 +41,8 @@ public class Main {
                 printListHV(arrHV);
                 // print ho of list HV
                 printNameListHV(arrHV);
+                // print name
+                showNameMember(arrHV);
 
         }
 
@@ -119,6 +122,22 @@ public class Main {
                         ho = arrHV[i].trim().substring(0, arrHV[i].indexOf(" "));
                         System.out.println(ho);
 
+                }
+        }
+
+        /**
+         * Create by: HQTrung - CTO VnLearn
+         * Create date: Nov 11, 2018
+         * Modifier: HQTrung
+         * Modified date: Nov 11, 2018
+         * Description: .print uppercase list hv
+         * Version 1.0
+         * @param arrHV
+         */
+        public static void printUperCaseListHV(String[] arrHV) {
+                for (int i = 0; i < arrHV.length; i++) {
+                        String hvtHV = arrHV[i];
+                        System.out.println("HV " + i + ": " + hvtHV.toUpperCase());
                 }
         }
 }
